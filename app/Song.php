@@ -12,7 +12,7 @@ class Song extends Model
 
     public function signer()
     {
-        return $this->hasOne(Singer::class);
+        return $this->hasOne(Artist::class);
     }
 
     public function categories()
