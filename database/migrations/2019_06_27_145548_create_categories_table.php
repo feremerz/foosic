@@ -17,8 +17,6 @@ class CreateCategoriesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('slug');
-            $table->integer('categorizable_id');
-            $table->string('categorizable_type');
             $table->softDeletes();
 
             $table->timestamps();

@@ -25,3 +25,5 @@ Route::namespace('Admin')->prefix('admin')->group(function (){
 
 
 });
+Route::get('/addsong', 'SongController@index');
+Route::get('/addcategory', 'CategoryController@index');
