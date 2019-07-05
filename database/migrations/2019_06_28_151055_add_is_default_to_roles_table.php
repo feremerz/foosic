@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCategorySongTable extends Migration
+class AddIsDefaultToRolesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateCategorySongTable extends Migration
      */
     public function up()
     {
-        Schema::create('category_song', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('song_id');
-            $table->timestamps();
+        Schema::table('roles', function (Blueprint $table) {
+            $table->tinyInteger('is_default')->default(0);
         });
     }
 
@@ -28,6 +25,8 @@ class CreateCategorySongTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category_song');
+        Schema::table('roles', function (Blueprint $table) {
+            //
+        });
     }
 }

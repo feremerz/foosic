@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSongsTable extends Migration
+class CreateAlbumsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,20 +13,12 @@ class CreateSongsTable extends Migration
      */
     public function up()
     {
-        Schema::create('songs', function (Blueprint $table) {
+        Schema::create('albums', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->date('release_date');
-            $table->text('lyrics');
-            $table->bigInteger('likeCount')->default(0);
-            $table->bigInteger('viewCount')->default(0);
-            $table->tinyInteger('status')->default(1);
-            $table->integer('duration')->unsigned()->default(0); //millisecond
-
+            $table->integer('price')->unsigned();
             $table->string('slug');
-            $table->unsignedBigInteger('album_id');
-            $table->softDeletes();
-
             $table->timestamps();
         });
     }
@@ -38,6 +30,6 @@ class CreateSongsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('songs');
+        Schema::dropIfExists('albums');
     }
 }

@@ -17,6 +17,9 @@ class CreateRolesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->tinyInteger('isAdmin');
+            $table->tinyInteger('isDefault');
+            $table->softDeletes();
+
             $table->timestamps();
         });
     }

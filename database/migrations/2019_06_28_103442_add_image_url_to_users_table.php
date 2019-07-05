@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddAlbumIdToSongsTable extends Migration
+class AddImageUrlToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,8 @@ class AddAlbumIdToSongsTable extends Migration
      */
     public function up()
     {
-        Schema::table('songs', function (Blueprint $table) {
-            $table->foreign('album_id')->references('id')->on('albums')->onDelete('cascade');
-
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('imageUrl')->nullable();
         });
     }
 
@@ -26,7 +25,7 @@ class AddAlbumIdToSongsTable extends Migration
      */
     public function down()
     {
-        Schema::table('songs', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             //
         });
     }

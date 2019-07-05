@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFilesTable extends Migration
+class CreatePhotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreateFilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('files', function (Blueprint $table) {
+        Schema::create('photos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('url');
-            $table->integer('file_size')->unsigned()->default(0); //KB
-            $table->integer('type')->unsigned();//1=>zip , 2=>320, 3=>128
-            $table->integer('fileable_id');
-            $table->string('fileable_type');
+            $table->integer('photosable_id');
+            $table->string('photosable_type');
             $table->softDeletes();
 
             $table->timestamps();
@@ -33,6 +31,6 @@ class CreateFilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('files');
+        Schema::dropIfExists('photos');
     }
 }

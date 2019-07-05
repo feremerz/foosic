@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSignersTable extends Migration
+class CreateArtistsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,18 @@ class CreateSignersTable extends Migration
      */
     public function up()
     {
-        Schema::create('singers', function (Blueprint $table) {
+        Schema::create('artists', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('fname');
-            $table->string('lname');
-            $table->string('imageurl');
+            $table->string('name');
+            $table->string('slug');
             $table->string('instagram');
             $table->string('telegram');
             $table->string('description');
             $table->bigInteger('likeCount')->default(0);
-            $table->bigInteger('dislikeCount')->default(0);
             $table->tinyInteger('status')->default(1);
+            $table->integer('art_id')->unsigned()->default(1);
+            $table->softDeletes();
+
             $table->timestamps();
         });
     }
@@ -35,6 +36,6 @@ class CreateSignersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('signers');
+        Schema::dropIfExists('artists');
     }
 }
