@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddAlbumIdToSongsTable extends Migration
+class AddSingerIdToSongsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,8 @@ class AddAlbumIdToSongsTable extends Migration
     public function up()
     {
         Schema::table('songs', function (Blueprint $table) {
-            $table->foreign('album_id')->references('id')->on('albums')->onDelete('cascade');
-
+            //
+            $table->foreign('singer_id')->references('id')->on('singers');
         });
     }
 

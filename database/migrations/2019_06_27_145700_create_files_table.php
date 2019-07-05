@@ -15,13 +15,8 @@ class CreateFilesTable extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('url');
-            $table->integer('file_size')->unsigned()->default(0); //KB
-            $table->integer('type')->unsigned();//1=>zip , 2=>320, 3=>128
-            $table->integer('fileable_id');
-            $table->string('fileable_type');
-            $table->softDeletes();
-
+            $table->string('path');
+            $table->string('name');
             $table->timestamps();
         });
     }

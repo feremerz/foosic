@@ -15,17 +15,15 @@ class CreateSongsTable extends Migration
     {
         Schema::create('songs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedBigInteger('singer_id');
+            //$table->foreign('singer_id')->references('id')->on('singers');
             $table->string('name');
-            $table->date('release_date');
+            $table->string('imageUrl');
             $table->text('lyrics');
             $table->bigInteger('likeCount')->default(0);
+            $table->bigInteger('dislikeCount')->default(0);
             $table->bigInteger('viewCount')->default(0);
             $table->tinyInteger('status')->default(1);
-            $table->integer('duration')->unsigned()->default(0); //millisecond
-
-            $table->string('slug');
-            $table->unsignedBigInteger('album_id');
-            $table->softDeletes();
 
             $table->timestamps();
         });
