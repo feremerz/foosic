@@ -21,7 +21,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::namespace('Admin')->prefix('admin')->group(function (){
-    Route::resource('users',"UserController");
-
-
+    Route::get('', function () {
+        return view('admin.index');
+    })->name('admin.index');
+    Route::resource('users','UserController');
+    Route::resource('roles','RoleController');
+    Route::resource('categories','CategoryController');
+    Route::resource('albums','AlbumController');
 });
+

@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     protected $fillable=[
-      'name'
+      'name','slug'
     ];
 
     public function songs()
     {
-        return $this->belongsToMany(Song::class);
+        return $this->morphedByMany(Song::class,'categorizable');
     }
 }

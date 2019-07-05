@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Requests\Admin\UserStore;
+use App\Http\Requests\Admin\UserUpdate;
+use App\Photo;
 use App\Role;
 use App\User;
 use Illuminate\Http\Request;
@@ -18,8 +21,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users=User::where('status',1)->paginate(10);
-        //dd($users);
+        $users=User::with('photo')->paginate(10);
         return view('admin.users.list',compact(['users']));
     }
 
@@ -40,23 +42,10 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserStore $request)
     {
        // dd($request);
-       $validData= $this->validate($request,[
-           'name'=>'required|max:100',
-           'email'=>'required|email|unique:users',
-           'password'=>'required|min:8',
-           'roles'=>'required',
-           'status'=>'required',
-
-        ],[
-            'name.required'=>'ورود نام الزامی است',
-            'email.required'=>'ورود نام الزامی است',
-            'password.required'=>'ورود نام الزامی است',
-            'roles.required'=>'ورود نام الزامی است'
-        ]);
-
+       $validData= $request->validated();
 
         $user=User::create([
             'name' => $validData['name'],
@@ -65,18 +54,20 @@ class UserController extends Controller
             'status'=>$validData["status"],
 
         ]);
-        $photo=null;
         if($file=$request->file('file')) {
             $t=time();
             $path = $file->move('images/profiles', $t . $file->getClientOriginalName());
-            $photo= $t . $request->file('file')->getClientOriginalName();
-           // $imageUrl=$path . $photo;
-            //dd($imageUrl);
+            $photoUrl= $t . $request->file('file')->getClientOriginalName();
+            $photo=Photo::create([
+                'url'=>$photoUrl,
+                'photosable_type'=>get_class($user),
+                'photosable_id'=>$user->id
+            ]);
+            $user->photo()->save($photo);
         }
-        $user->imageUrl=$photo;
         $user->roles()->attach($validData["roles"]);
         $user->save();
-        return redirect(route('users.index'));
+        return redirect(route('users.index'))->with('success','کاربر جدید با موفقیت اضافه شد!');;
     }
 
     /**
@@ -87,7 +78,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
@@ -98,7 +89,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user=User::findOrFail($id);
+        $roles=Role::all();
+        return view('admin.users.edit',compact(['user','roles']));
     }
 
     /**
@@ -108,9 +101,35 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UserUpdate $request, $id)
     {
-        //
+        $validData= $request->validated();
+        $user=User::findOrFail($id);
+        $user->name=$validData['name'];
+        $user->email=$validData['email'];
+        //dd($validData);
+        if(!empty($validData['password'])) {$user->password=Hash::make($validData['password']);}
+        $user->status=$validData["status"];
+
+        if($file=$request->file('file')) {
+            $oldPhoto=Photo::findOrFail($user->photo->id);
+            if(file_exists(public_path().'/'. $user->photo->url))unlink(public_path().'/'. $user->photo->url);
+            $oldPhoto->delete();
+
+            $t=time();
+            $path = $file->move('images/profiles', $t . $file->getClientOriginalName());
+            $photoUrl= $t . $request->file('file')->getClientOriginalName();
+            $photo=Photo::create([
+                'url'=>$photoUrl,
+                'photosable_type'=>get_class($user),
+                'photosable_id'=>$user->id
+            ]);
+            $user->photo()->save($photo);
+        }
+
+        $user->roles()->sync($validData["roles"]);
+        $user->save();
+        return redirect(route('users.index'))->with('success','کاربر با موفقیت ویرایش شد!');;
     }
 
     /**
@@ -121,6 +140,12 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user=User::findOrFail($id);
+        $oldPhoto=Photo::findOrFail($user->photo->id);
+        if(file_exists(public_path().'/'. $user->photo->url))unlink(public_path().'/'. $user->photo->url);
+        $oldPhoto->delete();
+        $user->delete();
+        return redirect(route('users.index'));
+
     }
 }

@@ -7,21 +7,21 @@ use Illuminate\Database\Eloquent\Model;
 class Song extends Model
 {
     protected $fillable=[
-        'singer_id','name','imageUrl','lyrics','likeCount','dislikeCount','viewCount','status'
+        'slug','name','release_date','lyrics','likeCount','dislikeCount','viewCount','status','album_id'
     ];
 
-    public function signer()
+    public function artist()
     {
-        return $this->hasOne(Singer::class);
+        return $this->belongsTo(Artist::class);
     }
 
     public function categories()
     {
-        return $this->belongsToMany(Category::class);
+        return $this->morphToMany(Category::class,'categorizable');
     }
 
     public function files()
     {
-        return $this->hasMany(File::class);
+        return $this->morphToMany(File::class,'fileable');
     }
 }

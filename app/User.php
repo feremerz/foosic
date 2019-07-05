@@ -39,15 +39,14 @@ class User extends Authenticatable
 
     public function roles()
     {
-        return $this->belongsToMany(Role::class);
+        return $this->belongsToMany(Role::class)->withTimestamps();
 
     }
 
-    public function getImageUrlAttribute($value)
+    public function photo()
     {
-        if(!empty($value))
-            return "images/profiles/" . $value;
-        else
-            return "https://dummyimage.com/80x80/dbd8db/fff.jpg&text=Avatar";
+        return $this->morphOne(Photo::class,'photosable');
     }
+
+
 }

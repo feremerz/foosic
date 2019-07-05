@@ -14,8 +14,6 @@
     <link href="{{asset('admin/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('admin/css/simple-line-icons.css')}}" rel="stylesheet">
     <!-- Main styles for this application -->
-
-
     <link href="{{asset('admin/dest/style.css')}}" rel="stylesheet">
 
 </head>
@@ -89,15 +87,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> داشبرد <span class="tag tag-info">جدید</span></a>
             </li>
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i>مدیریت کاربران</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('users.index')}}"><i class="icon-people"></i> لیست کاربران</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('users.create')}}"><i class="icon-user-follow"></i> ثبت کاربر</a>
+                    </li>
+                </ul>
+            </li>
 
-            <li class="nav-title">
-                مدیریت کاربران
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="icon-user-follow"></i> ثبت کاربر</a>
-                <a class="nav-link" href="#"><i class="icon-people"></i> لیست کاربران</a>
-                <a class="nav-link" href="#"><i class="icon-user-following"></i> دسترسی کاربران</a>
-            </li>
 
             <li class="nav-title">
                 مدیریت فایل ها
@@ -113,29 +114,7 @@
                 <a class="nav-link" href="#"><i class="icon-people"></i> کاربران</a>
                 <a class="nav-link" href="#"><i class="icon-docs"></i>  فایل ها</a>
             </li>
-            <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> ثبت کاربر جدید</a>
-                <ul class="nav-dropdown-items">
-                    <li class="nav-item">
-                        <a class="nav-link" href="components-buttons.html"><i class="icon-puzzle"></i> لیست کاربران</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="components-social-buttons.html"><i class="icon-puzzle"></i> Social Buttons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="components-cards.html"><i class="icon-puzzle"></i> Cards</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="components-forms.html"><i class="icon-puzzle"></i> Forms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="components-switches.html"><i class="icon-puzzle"></i> Switches</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="components-tables.html"><i class="icon-puzzle"></i> Tables</a>
-                    </li>
-                </ul>
-            </li>
+
 
             <!--<li class="nav-item nav-dropdown">
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-star"></i> Icons</a>
