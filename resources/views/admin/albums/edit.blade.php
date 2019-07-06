@@ -40,6 +40,16 @@
                             <input type="text" name="slug" class="form-control" placeholder="نامک" value="{{$album->slug}}">
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-compress"></i></span>
+                            <select multiple name="artists[]" class="form-control">
+                                @foreach($artists as $artist)
+                                    <option value="{{ $artist->id }}" {{ $album->artists->contains($artist->id) ? 'selected' : '' }}>{{ $artist->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
                     <div class="float-right ml-3">
                         <button class="btn btn-success" type="submit">ویرایش آلبوم</button>
                     </div>

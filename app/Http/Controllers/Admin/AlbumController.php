@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Album;
+use App\Artist;
 use App\Http\Requests\Admin\AlbumStore;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -27,7 +28,8 @@ class AlbumController extends Controller
      */
     public function create()
     {
-        return view('admin.albums.create');
+        $artists=Artist::all();
+        return view('admin.albums.create',compact('artists'));
     }
 
     /**
@@ -45,6 +47,7 @@ class AlbumController extends Controller
             'price'=>$validData['price'],
             'slug'=>$validData['slug']
         ]);
+        $album->artists()->attach($validData['artists']);
         $album->save();
         return redirect(route('albums.index'))->with('success','آلبوم جدید با موفقیت اضافه شد!');
     }
@@ -69,7 +72,8 @@ class AlbumController extends Controller
     public function edit($id)
     {
         $album=Album::findOrFail($id);
-        return view('admin.albums.edit',compact('album'));
+        $artists=Artist::all();
+        return view('admin.albums.edit',compact(['album','artists']));
     }
 
     /**

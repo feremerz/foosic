@@ -40,6 +40,16 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-compress"></i></span>
+                            <select multiple name="artists[]" class="form-control">
+                                @foreach($artists as $artist)
+                                    <option value="{{$artist->id}}">{{$artist->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <button class="btn btn-success" type="submit">ثبت آلبوم جدید</button>
                     </div>
                 </form>

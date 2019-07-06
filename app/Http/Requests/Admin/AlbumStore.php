@@ -27,6 +27,7 @@ class AlbumStore extends FormRequest
             'name'=>'required',
             'release_date'=>'required',
             'price'=>'required',
+            'artists'=>'required',
             'slug'=>'required|unique:albums',
         ];
     }

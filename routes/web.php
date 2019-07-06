@@ -29,5 +29,7 @@ Route::namespace('Admin')->prefix('admin')->group(function (){
     Route::resource('categories','CategoryController');
     Route::resource('albums','AlbumController');
     Route::resource('artists','ArtistController');
+    Route::resource('songs','SongController');
 });
+
 

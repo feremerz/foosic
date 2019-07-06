@@ -9,6 +9,7 @@
         <th>نام آلبوم</th>
         <th>تاریخ انتشار</th>
         <th>قیمت</th>
+        <th>آرتیست ها</th>
         <th>نامک</th>
         <th>ویرایش</th>
 
@@ -20,6 +21,15 @@
                 <td>{{$album->name}}</td>
                 <td>{{$album->release_date}}</td>
                 <td>{{$album->price}}</td>
+                <td>
+                    <ul class="list-group list-group-flush">
+                        @foreach($album->artists as $artist)
+                            <li class="list-group-item">
+                                {{$artist->name}}
+                            </li>
+                        @endforeach
+                    </ul>
+                </td>
                 <td>{{$album->slug}}</td>
                 <td>
                     <a class="btn btn-primary btn-xs" data-title="Edit" href="{{route('albums.edit',[$album->id])}}">
