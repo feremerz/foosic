@@ -45,7 +45,6 @@
                             <span class="input-group-addon"><i class="fa fa-users"></i></span>
                             <select multiple name="roles[]" class="form-control">
                                 @foreach($roles as $role)
-                                    +
                                     <option value="{{ $role->id }}" {{ $user->roles->contains($role->id) ? 'selected' : '' }}>{{ $role->name }}</option>
                                 @endforeach
                             </select>

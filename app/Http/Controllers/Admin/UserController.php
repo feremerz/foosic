@@ -67,7 +67,7 @@ class UserController extends Controller
         }
         $user->roles()->attach($validData["roles"]);
         $user->save();
-        return redirect(route('users.index'))->with('success','کاربر جدید با موفقیت اضافه شد!');;
+        return redirect(route('users.index'))->with('success','کاربر جدید با موفقیت اضافه شد!');
     }
 
     /**

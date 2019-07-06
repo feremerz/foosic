@@ -14,4 +14,9 @@ class Category extends Model
     {
         return $this->morphedByMany(Song::class,'categorizable');
     }
+
+    public function artists()
+    {
+        return $this->morphedByMany(Artist::class,'categorizable');
+    }
 }
