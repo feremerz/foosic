@@ -171,6 +171,17 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item nav-dropdown">
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-music-tone"></i>مدیریت آهنگ ها</a>
+                    <ul class="nav-dropdown-items">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('songs.index')}}"><i class="icon-music-tone"></i> لیست آهنگ ها</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('songs.create')}}"><i class="icon-music-tone-alt"></i> ثبت آهنگ جدید</a>
+                        </li>
+                    </ul>
+                </li>
 
             </ul>
         </nav>

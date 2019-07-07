@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Album;
 use App\Artist;
 use App\Category;
+use App\File;
+use App\Http\Requests\Admin\SongStore;
+use App\Song;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -39,9 +42,45 @@ class SongController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SongStore $request)
     {
-        //
+        $validData= $request->validated();
+
+        $song=Song::create([
+            'name' => $validData['name'],
+            'release_date' => $validData['release_date'],
+            'lyrics' => $validData['lyrics'],
+            'status'=>$validData["status"],
+
+        ]);
+        if($file=$request->file('photo')) {
+            $t=time();
+            $path = $file->move('images/songs', $t . $file->getClientOriginalName());
+            $photoUrl= $t . $request->file('photo')->getClientOriginalName();
+            $photo=Photo::create([
+                'url'=>$photoUrl,
+                'photosable_type'=>get_class($song),
+                'photosable_id'=>$song->id
+            ]);
+            $song->photo()->save($photo);
+        }
+        if($file=$request->file('file128')) {
+            $t=time();
+            $songPath='songs/';
+            $path = $file->move('songs/songs', $t . $file->getClientOriginalName());
+            $fileURL= $t . $request->file('file128')->getClientOriginalName();
+            $file=File::create([
+                'url'=>$photoUrl,
+                'fileable_type'=>3,
+                'fileable_id'=>$song->id
+            ]);
+            $song->photo()->save($photo);
+        }
+
+        $song->categories()->attach($validData["categories"]);
+        $song->albums()->attach($validData["albums"]);
+        $song->save();
+        return redirect(route('users.index'))->with('success','کاربر جدید با موفقیت اضافه شد!');
     }
 
     /**

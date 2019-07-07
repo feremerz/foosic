@@ -13,7 +13,7 @@ class SongStore extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class SongStore extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name'=>'required',
+            'release_date'=>'required',
+            'album_id'=>'required',
+            'categories'=>'required',
+            'status'=>'required',
+            'photo'=>'required',
+            'file128'=>'required_without:file320',
+            'file320'=>'required_without:file128',
         ];
     }
 }
