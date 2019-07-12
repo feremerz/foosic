@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class File extends Model
 {
     protected $fillable=[
-      'song_id','path','name'
+      'url','file_size','type','fileable_id','fileable_type'
     ];
 
 }

@@ -48,6 +48,7 @@ class ArtistController extends Controller
         $validData=$request->validated();
         $artist=Artist::create([
             'name'=>$validData['name'],
+            'engName'=>$validData['engName'],
             'slug'=>$validData['slug'],
             'art_id' =>$validData['art_id'],
             'instagram'=>$request['instagram'],
@@ -109,6 +110,7 @@ class ArtistController extends Controller
         $artist=Artist::findOrFail($id);
         $artist->update([
             'name'=>$validData['name'],
+            'engName'=>$validData['engName'],
             'slug'=>$validData['slug'],
             'art_id' =>$validData['art_id'],
             'instagram'=>$request['instagram'],

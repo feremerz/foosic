@@ -26,8 +26,11 @@ class SongStore extends FormRequest
         return [
             'name'=>'required',
             'release_date'=>'required',
-            'album_id'=>'required',
+            'is_album'=>'required',
+            'price'=>'required',
+            'engName'=>'required',
             'categories'=>'required',
+            'signers'=>'required',
             'status'=>'required',
             'photo'=>'required',
             'file128'=>'required_without:file320',

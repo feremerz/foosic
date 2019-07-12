@@ -21,6 +21,7 @@
     <link href="{{asset('adminDashboard/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('adminDashboard/css/simple-line-icons.css')}}" rel="stylesheet">
 
+
     <!-- Main styles for this application -->
     <link href="{{asset('adminDashboard/css/style.css')}}" rel="stylesheet">
 </head>
@@ -523,14 +524,9 @@
 
 <script src="{{asset('adminDashboard/js/app.js')}}"></script>
 
-
-
-
-
-<!-- Plugins and scripts required by this views -->
-
 <!-- Custom scripts required by this view -->
 <script src="{{asset('adminDashboard/js/views/main.js')}}"></script>
+@yield('scripts')
 
 </body>
 

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Artist extends Model
 {
     protected $fillable=[
-        'name','slug','art_id','instagram','telegram','description','likeCount','status'
+        'name','slug','art_id','instagram','telegram','description','likeCount','status','engName'
     ];
 
     public function categories()

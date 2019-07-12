@@ -13,8 +13,18 @@
                         @endforeach
                     </div>
                 @endif
-                <form method="post" action="{{route('songs.store')}}" enctype="multipart/form-data">
+                <form  method="post" action="{{route('songs.store')}}" enctype="multipart/form-data">
                     @csrf
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-check"></i>نوع</span>
+                            <select name="is_album" class="form-control">
+                                <option value="0" selected>آهنگ</option>
+                                <option value="1" >آلبوم</option>
+                            </select>
+
+                        </div>
+                    </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user"></i>نام</span>
@@ -23,40 +33,75 @@
                     </div>
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-envelope"></i>تاریخ</span>
-                            <input type="text" name="release_date" class="form-control" placeholder="تاریخ انتشار">
+                            <span class="input-group-addon"><i class="fa fa-user"></i>نام انگلیسی</span>
+                            <input type="text" name="engName" class="form-control" placeholder="نام انگلیسی">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-envelope"></i>متن</span>
+                            <span class="input-group-addon"><i class="fa fa-user"></i>نامک</span>
+                            <input type="text" name="slug" class="form-control" placeholder="نامک">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i>قیمت</span>
+                            <input type="text" name="price" class="form-control" value="0" placeholder="قیمت">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i>تاریخ</span>
+                            <input id="tarikh" type="text" name="release_date" value="{{\Morilog\Jalali\Jalalian::now()->format('%Y/%m/%d')}}"  class="form-control release" placeholder="تاریخ انتشار">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope"></i>متن آهنگ</span>
                             <textarea type="text" name="lyrics" class="form-control" placeholder="متن آهنگ"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-music"></i>خواننده</span>
-                            <select  name="albums[]" class="form-control">
-                                @foreach($artists as $artist)
-                                    <option value="{{$artist->id}}">{{$artist->name}}</option>
+                            <select multiple name="signers[]" class="form-control">
+                                @foreach($signers as $signer)
+                                    <option value="{{$signer->id}}">{{$signer->name}}</option>
                                 @endforeach
                             </select>
                         </div>
                     </div>
-                    <label class="file">
-                        <input type="file" id="file" aria-label="File browser example">
-                        <span class="file-custom"></span>
-                    </label>
                     <div class="form-group">
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-music"></i>آلبوم</span>
-                            <select  name="albums[]" class="form-control">
-                                @foreach($albums as $album)
-                                    <option value="{{$album->id}}">{{$album->name}}</option>
+                            <span class="input-group-addon"><i class="fa fa-music"></i>آهنگ ساز</span>
+                            <select  name="songMakers[]" class="form-control">
+                                @foreach($songMakers as $songMaker)
+                                    <option value="{{$songMaker->id}}">{{$songMaker->name}}</option>
                                 @endforeach
                             </select>
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-music"></i>تنظیم کننده</span>
+                            <select  name="arrangements[]" class="form-control">
+                                @foreach($arrangements as $arrangement)
+                                    <option value="{{$arrangement->id}}">{{$arrangement->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-music"></i>شاعر</span>
+                            <select  name="poets[]" class="form-control">
+                                @foreach($poets as $poet)
+                                    <option value="{{$poet->id}}">{{$poet->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"> <i class="fa fa-music"></i> سبک </span>
@@ -74,25 +119,36 @@
                                 <option value="0">غیرفعال</option>
                                 <option value="1" selected>فعال</option>
                             </select>
-
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-image"></i>تصویر</span>
-                            <input type="file" name="photo" class="form-control-file" multiple>
+                            <input type="file" name="photo[]" class="form-control-file" multiple>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-file"></i>فایل 128</span>
-                            <input type="file" name="file128" class="form-control-file" multiple>
+                            <input type="file" name="file128[]" class="form-control-file" multiple>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-file"></i>فایل 320</span>
-                            <input type="file" name="file320" class="form-control-file" multiple>
+                            <input type="file" name="file320[]" class="form-control-file" multiple>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-file"></i>zip 128</span>
+                            <input type="file" name="zip128" class="form-control-file" multiple>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-file"></i>zip 320</span>
+                            <input type="file" name="zip320" class="form-control-file" multiple>
                         </div>
                     </div>
                     <div class="form-group">

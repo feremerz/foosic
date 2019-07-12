@@ -8,6 +8,7 @@
         <th><input type="checkbox" id="checkall"/></th>
         <th>تصویر</th>
         <th>نام</th>
+        <th>Name</th>
         <th>نوع</th>
         <th>نامک</th>
         <th>سبک</th>
@@ -24,6 +25,7 @@
                 <td><input type="checkbox" class="checkthis"/></td>
                 <td><img width="80" height="80" src="{{ asset($artist->photo->url) }}"></td>
                 <td>{{$artist->name}}</td>
+                <td>{{$artist->engName}}</td>
                 <td>
                     <select name="art_id" class="form-control" disabled>
                         <option value="1" {{($artist->art_id==1) ? 'selected' : ''}}>خواننده</option>

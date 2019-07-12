@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e39543b9-f036-41d0-8abb-4eaecef8783b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/adminDashboard/css/dropzone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/adminDashboard/css/kamadatepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/adminDashboard/js/kamadatepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/adminDashboard/js/persianDatepicker.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Artist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/File.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/File.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArtistController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArtistController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/ArtistStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/ArtistStore.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/ArtistUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/ArtistUpdate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/adminDashboard/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/adminDashboard/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Song.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Song.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_27_145435_create_songs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_27_145435_create_songs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_27_145500_create_artists_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_27_145500_create_artists_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/artists/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/artists/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/artists/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/artists/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/artists/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/artists/list.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/songs/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/songs/create.blade.php" afterDir="false" />
     </list>
@@ -23,85 +38,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/adminDashboard/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="1125" column="29" selection-start-line="1125" selection-start-column="29" selection-end-line="1125" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/songs/create.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+            <state relative-caret-position="84">
+              <caret line="126" column="58" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="178" column="29" lean-forward="true" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/isAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="153">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
-                <element signature="e#39#51#0#PHP" expanded="true" />
+                <element signature="e#46#60#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/ArtistStore.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="560">
+              <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/ArtistUpdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+            <state relative-caret-position="204">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Song.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArtistController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="69" selection-end-column="96" />
+            <state relative-caret-position="-833">
+              <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+              <folding>
+                <element signature="e#46#61#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,6 +118,8 @@
       <find>user</find>
       <find>middleware</find>
       <find>select.form-control:not([size]):not([multiple])</find>
+      <find>آلب</find>
+      <find>release_date</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,8 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_27_160557_add_singer_id_to_songs_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_27_145435_create_songs_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_27_161015_add_singer_id_to_songs_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_27_145500_create_signers_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_27_173056_add_song_id_to_songs_table.php" />
@@ -148,7 +139,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_06_28_103442_add_image_url_to_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_28_103543_add_status_to_users_table.php" />
         <option value="$PROJECT_DIR$/app/Role.php" />
-        <option value="$PROJECT_DIR$/app/File.php" />
         <option value="$PROJECT_DIR$/app/Singer.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_28_104242_create_pivot_role_user_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
@@ -163,30 +153,33 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" />
         <option value="$PROJECT_DIR$/app/Category.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/artists/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Artist.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/ArtistStore.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ArtistController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/artists/edit.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/artists/list.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/ArtistUpdate.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/albums/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Admin/AlbumStore.php" />
         <option value="$PROJECT_DIR$/app/Album.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/AlbumController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/albums/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/albums/list.blade.php" />
-        <option value="$PROJECT_DIR$/app/Song.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/isAdmin.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/public/adminDashboard/css/style.css" />
+        <option value="$PROJECT_DIR$/app/File.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php" />
-        <option value="$PROJECT_DIR$/public/adminDashboard/css/style.css" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_27_145500_create_artists_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/ArtistStore.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ArtistController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/artists/create.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/artists/list.blade.php" />
+        <option value="$PROJECT_DIR$/app/Artist.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/artists/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/Admin/ArtistUpdate.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_27_145435_create_songs_table.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/songs/create.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php" />
+        <option value="$PROJECT_DIR$/app/Song.php" />
       </list>
     </option>
   </component>
@@ -277,7 +270,7 @@
       <path value="$PROJECT_DIR$/vendor/morilog/jalali" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -291,6 +284,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,25 +353,13 @@
             <path>
               <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
               <item name="foosic" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
               <item name="foosic" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foosic" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="adminDashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foosic" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="adminDashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
@@ -396,14 +378,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foosic" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="albums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
@@ -427,6 +401,14 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foosic" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="songs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -438,26 +420,27 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/adminDashboard/css" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\foosic\public\css" />
-      <recent name="C:\xampp\htdocs\foosic\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\foosic\public\images\profiles" />
       <recent name="C:\xampp\htdocs\foosic\public\admin\dest" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\foosic\public\adminDashboard\css" />
+      <recent name="C:\xampp\htdocs\foosic\public\adminDashboard\js" />
+      <recent name="C:\xampp\htdocs\foosic\public\css" />
+      <recent name="C:\xampp\htdocs\foosic\public" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -494,17 +477,18 @@
       <workItem from="1562084867369" duration="458000" />
       <workItem from="1562402665928" duration="9381000" />
       <workItem from="1562479038930" duration="4666000" />
+      <workItem from="1562948116005" duration="11404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51877000" />
+    <option name="totallyTimeSpent" value="73033000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30269924" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30711043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -518,7 +502,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924356" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" visible="true" weight="0.25437415" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.25531915" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -569,131 +553,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_27_145548_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_04_070614_create_categorizable_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_04_054720_create_photos_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SongController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/UserStore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/ArtistStore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/CategoryStore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/artists/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="37" column="75" selection-start-line="37" selection-start-column="75" selection-end-line="37" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/artists/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/UserUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/ArtistUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="27" column="31" lean-forward="true" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#43#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/AlbumStore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Artist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -722,16 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArtistController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="93" column="39" lean-forward="true" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
-          <folding>
-            <element signature="e#46#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AlbumController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -753,24 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/albums/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="9" column="110" selection-start-line="9" selection-start-column="110" selection-end-line="9" selection-end-column="110" />
         </state>
       </provider>
     </entry>
@@ -839,7 +674,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="221">
           <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
@@ -847,14 +682,14 @@
     <entry file="file://$PROJECT_DIR$/resources/views/admin/albums/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <caret line="44" column="49" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/isAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding>
             <element signature="e#39#51#0#PHP" expanded="true" />
           </folding>
@@ -863,50 +698,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="816">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
-          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/artists/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="178" column="29" lean-forward="true" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="69" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        <state relative-caret-position="1802">
+          <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="117" />
         </state>
       </provider>
     </entry>
@@ -917,10 +724,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/songs/create.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/File.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_28_103336_create_roles_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/roles/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/adminDashboard/js/dropzone.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dropzone.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/adminDashboard/css/dropzone.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/adminDashboard/js/persianDatepicker.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/adminDashboard/js/jquery-1.10.1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/adminDashboard/js/kamadatepicker.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/adminDashboard/css/kamadatepicker.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="527" column="36" selection-start-line="527" selection-start-column="36" selection-end-line="527" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_27_145500_create_artists_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/artists/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <caret line="27" column="45" lean-forward="true" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/artists/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="31" column="135" selection-start-line="31" selection-start-column="135" selection-end-line="31" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/ArtistStore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="38" column="50" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/ArtistUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_27_145435_create_songs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="30" column="61" lean-forward="true" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Artist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="97" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/artists/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArtistController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+          <folding>
+            <element signature="e#46#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/songs/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="126" column="58" selection-start-line="126" selection-start-column="58" selection-end-line="126" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#46#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
         </state>
       </provider>
     </entry>

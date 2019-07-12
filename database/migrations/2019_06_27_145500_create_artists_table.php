@@ -16,10 +16,11 @@ class CreateArtistsTable extends Migration
         Schema::create('artists', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('slug');
-            $table->string('instagram');
-            $table->string('telegram');
-            $table->string('description');
+            $table->string('engName')->nullable();
+            $table->string('slug')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('telegram')->nullable();
+            $table->string('description')->nullable();
             $table->bigInteger('likeCount')->default(0);
             $table->tinyInteger('status')->default(1);
             $table->integer('art_id')->unsigned()->default(1);

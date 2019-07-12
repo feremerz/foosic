@@ -25,6 +25,7 @@ class ArtistStore extends FormRequest
     {
         return [
             'name'=>'required',
+            'engName'=>'required',
             'slug'=>'required|unique:artists',
             'art_id'=>'required',
             'categories'=>'required',
@@ -35,6 +36,7 @@ class ArtistStore extends FormRequest
     {
         return [
             'name.required'=>'ورود نام الزامی است',
+            'engName.required'=>'ورود نام انگلیسی الزامی است',
             'slug.required'=>'ورود نامک الزامی است',
             'slug.unique'=>'نامک تکراری است',
             'art_id.required'=>'ورود نوع هنرمند الزامی است',

@@ -16,15 +16,19 @@ class CreateSongsTable extends Migration
         Schema::create('songs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('engName');
             $table->date('release_date');
-            $table->text('lyrics');
+            $table->text('lyrics')->nullable();
             $table->bigInteger('likeCount')->default(0);
             $table->bigInteger('viewCount')->default(0);
             $table->tinyInteger('status')->default(1);
+            $table->tinyInteger('is_album')->default(0);
+            $table->Integer('price')->default(0);
             $table->integer('duration')->unsigned()->default(0); //millisecond
-
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->string('slug');
-            $table->unsignedBigInteger('album_id');
+            $table->unsignedBigInteger('album_id')->nullable();
             $table->softDeletes();
 
             $table->timestamps();

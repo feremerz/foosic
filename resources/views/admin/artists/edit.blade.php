@@ -28,6 +28,12 @@
                         </div>
                         <div class="form-group">
                             <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-tags"></i></span>
+                                <input type="text" name="engName" class="form-control" placeholder="نام انگلیسی" value="{{$artist->engName}}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-link"></i></span>
                                 <input type="text" name="slug" class="form-control text-left" placeholder="slug" value="{{$artist->slug}}">
                             </div>
