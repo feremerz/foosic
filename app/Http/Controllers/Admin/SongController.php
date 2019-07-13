@@ -22,7 +22,7 @@ class SongController extends Controller
      */
     public function index()
     {
-        $song=Song::where('id','10')->with(['artists','files','photo'])->get();
+        $song=Song::with(['artists','files','photo'])->get();
         return $song;
     }
 
@@ -115,6 +115,7 @@ class SongController extends Controller
         }
         if($files=$request->file('zip128')) {
             $t=time();
+
             $engName=$request['engName'];
             foreach ($files as $file) {
                 $songPath = 'dl/songs/'  . Jalalian::now()->format('%Y/%m/%d') . $engName . '[128]' ;
