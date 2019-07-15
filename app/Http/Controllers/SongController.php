@@ -16,19 +16,8 @@ class SongController extends Controller
      */
     public function index()
     {
-        $song=Song::create([
-           'name'=>'Amir Tataloo - Khar',
-           'release_date'=>Carbon::now(),
-           'lyrics'=>'بازم خاااره',
-           'likeCount'=>5,
-           'viewCount'=>10,
-           'status'=>1,
-           'duration'=>1232,
-           'slug'=>'amir-tataloo-khar',
-           'album_id'=>1
-        ]);
-        $category=Category::find(1);
-        $song->categories()->save($category);
+        $songs=Song::with(['artists','photo','categories'])->get();
+        return view('index',compact('songs'));
     }
 
     /**

@@ -2,8 +2,453 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e39543b9-f036-41d0-8abb-4eaecef8783b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Vazir.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Vazir.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Vazir.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/Vazir.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/avatar2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SongController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/dropzone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/font-awesome.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/simple-line-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/simple-line-icons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/simple-line-icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/css/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/dest/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/dest/style-custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/dest/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-Black-FD.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-Black-FD.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-Black-FD.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-Black-FD.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-Bold-FD.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-Bold-FD.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-Bold-FD.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-Bold-FD.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-FD.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-FD.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-FD.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Sahel-FD.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Simple-Line-Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Simple-Line-Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Simple-Line-Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Simple-Line-Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/Simple-Line-Icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/avatars/roxo-avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/coreui-logotyp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/ASEAN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Afghanistan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/African Union.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Albania.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Algeria.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/American Samoa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Andorra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Angola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Anguilla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Antarctica.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Antigua &amp; Barbuda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Arab League.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Argentina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Armenia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Aruba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Australia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Austria.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Azerbaijan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Bahamas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Bahrain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Bangladesh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Barbados.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Belarus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Belgium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Belize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Benin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Bermuda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Bhutan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Bolivia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Bosnia &amp; Herzegovina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Botswana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Brazil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Brunei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Bulgaria.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Burkina Faso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Burundi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/CARICOM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/CIS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Cambodja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Cameroon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Canada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Cape Verde.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Cayman Islands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Central African Republic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Chad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Chile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/China.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Colombia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Commonwealth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Comoros.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Congo-Brazzaville.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Congo-Kinshasa(Zaire).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Cook Islands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Costa Rica.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Cote d'Ivoire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Croatia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Cuba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Cyprus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Czech Republic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Denmark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Djibouti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Dominica.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Dominican Republic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Ecuador.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Egypt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/El Salvador.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/England.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Equatorial Guinea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Eritrea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Estonia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Ethiopia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/European Union.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Faroes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Fiji.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Finland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/France.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Gabon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Gambia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Georgia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Germany.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Ghana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Gibraltar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Greece.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Greenland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Grenada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Guadeloupe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Guam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Guatemala.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Guernsey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Guinea-Bissau.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Guinea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Guyana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Haiti.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Honduras.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Hong Kong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Hungary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Iceland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/India.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Indonezia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Iran.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Iraq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Ireland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Islamic Conference.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Isle of Man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Israel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Italy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Jamaica.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Japan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Jersey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Jordan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Kazakhstan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Kenya.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Kiribati.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Kosovo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Kuwait.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Kyrgyzstan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Laos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Latvia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Lebanon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Lesotho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Liberia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Libya.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Liechtenshein.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Lithuania.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Luxembourg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Macao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Macedonia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Madagascar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Malawi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Malaysia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Maldives.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Mali.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Malta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Marshall Islands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Martinique.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Mauritania.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Mauritius.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Mexico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Micronesia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Moldova.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Monaco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Mongolia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Montenegro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Montserrat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Morocco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Mozambique.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Myanmar(Burma).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/NATO.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Namibia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Nauru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Nepal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Netherlands Antilles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Netherlands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/New Caledonia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/New Zealand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Nicaragua.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Niger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Nigeria.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/North Korea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Northern Cyprus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Northern Ireland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Norway.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/OPEC.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Olimpic Movement.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Oman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Pakistan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Palau.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Palestine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Panama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Papua New Guinea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Paraguay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Peru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Philippines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Poland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Portugal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Puerto Rico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Qatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Red Cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Reunion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Romania.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Russia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Rwanda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Saint Lucia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Samoa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/San Marino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Sao Tome &amp; Principe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Saudi Arabia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Scotland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Senegal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Serbia(Yugoslavia).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Seychelles.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Sierra Leone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Singapore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Slovakia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Slovenia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Solomon Islands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Somalia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Somaliland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/South Africa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/South Korea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Spain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Sri Lanka.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/St Kitts &amp; Nevis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/St Vincent &amp; the Grenadines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Sudan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Suriname.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Swaziland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Sweden.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Switzerland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Syria.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Tahiti(French Polinesia).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Taiwan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Tajikistan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Tanzania.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Thailand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Timor-Leste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Togo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Tonga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Trinidad &amp; Tobago.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Tunisia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Turkey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Turkmenistan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Turks and Caicos Islands.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Tuvalu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/USA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Uganda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Ukraine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/United Arab Emirates.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/United Nations.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/United-Kingdom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Uruguay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Uzbekistan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Vanutau.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Vatican City.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Venezuela.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Viet Nam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Virgin Islands British.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Virgin Islands US.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Wales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Western Sahara.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Yemen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Zambia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/flags/Zimbabwe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/dropzone.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/libs/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/libs/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/libs/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/libs/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/libs/pace.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/libs/tether.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/views/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/views/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/js/views/widgets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_animation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_custom.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_responsive-embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_tags.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/bootstrap-flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_cards.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_navbar-align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_pulls.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_reset-filter.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_tab-focus.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_tag.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_pulls.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/bootstrap/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/_bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/_coreui-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/_main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/_vendors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap-variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/_tags.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/bootstrap/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/coreui.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_animate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_aside.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_avatars.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_breadcrumb-menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_callout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_charts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_loading.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_mobile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_navigation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_others.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_switches.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_temp.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_utilities-border.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/_widgets.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/navigation/_disabled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/navigation/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/main/navigation/_top.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/adminold/scss/coreui/vendors/chart.js/chart.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/javascripts.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -23,37 +468,79 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SongController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+              <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/songs/create.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              <folding>
+                <element signature="e#282#306#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Song.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/partials/navbar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="54" column="78" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -61,35 +548,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
+            <state relative-caret-position="612">
               <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3043">
-              <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="69" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -99,8 +559,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="blade" />
         <option value="Blade" />
+        <option value="blade" />
       </list>
     </option>
   </component>
@@ -117,6 +577,7 @@
       <find>select.form-control:not([size]):not([multiple])</find>
       <find>آلب</find>
       <find>release_date</find>
+      <find>1 min</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -126,11 +587,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_27_173056_add_song_id_to_songs_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_27_173209_add_song_id_to_files_table.php" />
-        <option value="$PROJECT_DIR$/public/admin/index.html" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_28_103336_create_roles_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_28_103427_add_api_token_to_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_28_103442_add_image_url_to_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_28_103543_add_status_to_users_table.php" />
         <option value="$PROJECT_DIR$/app/Role.php" />
@@ -174,8 +630,13 @@
         <option value="$PROJECT_DIR$/app/Song.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/songs/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/resources/views/partials/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/styles.css" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SongController.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
       </list>
     </option>
@@ -325,21 +786,6 @@
               <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
               <item name="foosic" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foosic" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foosic" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -361,14 +807,7 @@
               <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
               <item name="foosic" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="adminDashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="foosic" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="adminDashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
@@ -391,6 +830,13 @@
             <path>
               <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
               <item name="foosic" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="foosic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="foosic" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -402,22 +848,24 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/adminDashboard/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assests/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\foosic\public\images\profiles" />
-      <recent name="C:\xampp\htdocs\foosic\public\admin\dest" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\foosic\public\assests\images" />
+      <recent name="C:\xampp\htdocs\foosic\public\assests\fonts" />
       <recent name="C:\xampp\htdocs\foosic\public\adminDashboard\css" />
       <recent name="C:\xampp\htdocs\foosic\public\adminDashboard\js" />
       <recent name="C:\xampp\htdocs\foosic\public\css" />
-      <recent name="C:\xampp\htdocs\foosic\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\foosic\public\assests" />
+      <recent name="C:\xampp\htdocs\foosic\public\images\profiles" />
+      <recent name="C:\xampp\htdocs\foosic\public\admin\dest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -455,21 +903,22 @@
       <workItem from="1562402665928" duration="9381000" />
       <workItem from="1562479038930" duration="4666000" />
       <workItem from="1562948116005" duration="11404000" />
+      <workItem from="1563184602758" duration="10633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78300000" />
+    <option name="totallyTimeSpent" value="89542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27120823" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2744216" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49848714" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49848714" weight="0.32839838" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -530,54 +979,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/AlbumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="75" column="65" selection-start-line="75" selection-start-column="65" selection-end-line="75" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="47" column="152" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/albums/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="47" column="161" selection-start-line="47" selection-start-column="161" selection-end-line="47" selection-end-column="161" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/albums/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/songs/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/songs/list.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="35" column="14" lean-forward="true" selection-end-line="68" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3642" />
@@ -645,20 +1046,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="69" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/adminDashboard/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19125">
@@ -710,20 +1097,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/adminDashboard/css/kamadatepicker.min.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3043">
-          <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_27_145500_create_artists_table.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -791,60 +1164,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Song.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/songs/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="54" column="78" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4726">
-          <caret line="278" selection-start-line="278" selection-end-line="278" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#5;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#3;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SongController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -853,10 +1177,129 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/songs/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="78" selection-start-line="54" selection-start-column="78" selection-end-line="54" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/SongStore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3043">
+          <caret line="179" column="29" selection-start-line="179" selection-start-column="29" selection-end-line="179" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="7" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="69" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/javascripts.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/partials/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#5;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/master.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Song.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        <state relative-caret-position="119">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <element signature="e#282#306#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SongController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="67" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
         </state>
       </provider>
     </entry>
