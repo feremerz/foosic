@@ -14,6 +14,7 @@ class Photo extends Model
     {
         return $this->morphTo();
     }
+
     public function getUrlAttribute($value)
     {
         if(!empty($value))

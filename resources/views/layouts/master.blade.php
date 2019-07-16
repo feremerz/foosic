@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+@yield('title')
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,13 +15,14 @@
 @include('partials.navbar')
 
 <!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+<div class="w3-container w3-content" style="max-width:1200px;margin-top:80px">
     <!-- The Grid -->
-    <div class="w3-row">
+    <div class="w3-row ">
         <!-- Left Column -->
-        <div class="w3-col m3">
+
+        <div class="w3-col m4">
             <!-- Profile -->
-            <div class="w3-card w3-round w3-white">
+            <div class="w3-card w3-round w3-white w3-margin-right w3-margin-left w3-margin-bottom  ">
                 <div class="w3-container">
                     <h4 class="w3-center">My Profile</h4>
                     <p class="w3-center"><img src="/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
@@ -34,8 +35,8 @@
             <br>
 
             <!-- Accordion -->
-            <div class="w3-card w3-round">
-                <div class="w3-white">
+            <div class="w3-card w3-round  w3-margin-right w3-margin-left w3-margin-bottom ">
+                <div class="w3-white ">
                     <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Groups</button>
                     <div id="Demo1" class="w3-hide w3-container">
                         <p>Some text..</p>
@@ -73,7 +74,7 @@
             <br>
 
             <!-- Interests -->
-            <div class="w3-card w3-round w3-white w3-hide-small">
+            <div class="w3-card w3-round w3-white w3-hide-small  w3-margin-right w3-margin-left w3-margin-bottom ">
                 <div class="w3-container">
                     <p>Interests</p>
                     <p>
@@ -94,7 +95,7 @@
             <br>
 
             <!-- Alert Box -->
-            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small  w3-margin-right w3-margin-left w3-margin-bottom ">
         <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
           <i class="fa fa-remove"></i>
         </span>
@@ -106,54 +107,13 @@
         </div>
 
         <!-- Middle Column -->
-      @yield('content')
-            <!-- End Middle Column -->
-
-
-        <!-- Right Column -->
-        <div class="w3-col m2">
-            <div class="w3-card w3-round w3-white w3-center">
-                <div class="w3-container">
-                    <p>Upcoming Events:</p>
-                    <img src="/w3images/forest.jpg" alt="Forest" style="width:100%;">
-                    <p><strong>Holiday</strong></p>
-                    <p>Friday 15:00</p>
-                    <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
-                </div>
-            </div>
-            <br>
-
-            <div class="w3-card w3-round w3-white w3-center">
-                <div class="w3-container">
-                    <p>Friend Request</p>
-                    <img src="/w3images/avatar6.png" alt="Avatar" style="width:50%"><br>
-                    <span>Jane Doe</span>
-                    <div class="w3-row w3-opacity">
-                        <div class="w3-half">
-                            <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
-                        </div>
-                        <div class="w3-half">
-                            <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
-                <p>ADS</p>
-            </div>
-            <br>
-
-            <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
-                <p><i class="fa fa-bug w3-xxlarge"></i></p>
-            </div>
-
-            <!-- End Right Column -->
+        <div class="w3-col m8">
+            @yield('content')
         </div>
-
+        <!-- End Middle Column -->
+        </div>
         <!-- End Grid -->
-    </div>
+
 
     <!-- End Page Container -->
 </div>

@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
 use App\Song;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 
-class SongController extends Controller
+class IndexController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -11,12 +11,10 @@
 |
 */
 
-Route::get('/', 'SongController@index');
+Route::get('/', 'IndexController@index')->name('index');
+Route::get('/music/{music}', 'IndexController@show')->name('music.show');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 
 Route::namespace('Admin')->prefix('admin')->group(function (){
     Route::get('', function () {
