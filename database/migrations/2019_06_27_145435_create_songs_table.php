@@ -28,7 +28,6 @@ class CreateSongsTable extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('slug');
-            $table->unsignedBigInteger('album_id')->nullable();
             $table->softDeletes();
 
             $table->timestamps();

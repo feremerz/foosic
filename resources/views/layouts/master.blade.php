@@ -15,7 +15,7 @@
 @include('partials.navbar')
 
 <!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1200px;margin-top:80px">
+<div class="w3-container w3-content" style="max-width:1000px;margin-top:80px">
     <!-- The Grid -->
     <div class="w3-row ">
         <!-- Left Column -->
@@ -94,14 +94,6 @@
             </div>
             <br>
 
-            <!-- Alert Box -->
-            <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small  w3-margin-right w3-margin-left w3-margin-bottom ">
-        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
-          <i class="fa fa-remove"></i>
-        </span>
-                <p><strong>Hey!</strong></p>
-                <p>People are looking at your profile. Find out who.</p>
-            </div>
 
             <!-- End Left Column -->
         </div>

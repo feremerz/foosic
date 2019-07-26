@@ -15,11 +15,11 @@ class Photo extends Model
         return $this->morphTo();
     }
 
-    public function getUrlAttribute($value)
-    {
-        if(!empty($value))
-            return "images/profiles/" . $value;
-        else
-            return "https://dummyimage.com/80x80/dbd8db/fff.jpg&text=Avatar";
-    }
+//    public function getUrlAttribute($value)
+//    {
+//        if(!empty($value))
+//            return "images/profiles/" . $value;
+//        else
+//            return "https://dummyimage.com/80x80/dbd8db/fff.jpg&text=Avatar";
+//    }
 }

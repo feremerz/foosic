@@ -151,17 +151,6 @@
                     </ul>
                 </li>
                 <li class="nav-item nav-dropdown">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-music-tone"></i>مدیریت آلبوم ها</a>
-                    <ul class="nav-dropdown-items">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('albums.index')}}"><i class="icon-music-tone"></i> لیست آلبوم ها</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('albums.create')}}"><i class="icon-music-tone-alt"></i> ثبت آلبوم جدید</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item nav-dropdown">
                     <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-music-tone"></i>مدیریت آرتیست ها</a>
                     <ul class="nav-dropdown-items">
                         <li class="nav-item">

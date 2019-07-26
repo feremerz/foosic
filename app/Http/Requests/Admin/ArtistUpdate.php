@@ -27,7 +27,7 @@ class ArtistUpdate extends FormRequest
         return [
             'name'=>'required',
             'engName'=>'required',
-           'slug'=> Rule::unique('artists')->ignore($this->route('artist')),
+            'slug'=> Rule::unique('artists')->ignore($this->route('artist')),
             'art_id'=>'required',
             'categories'=>'required',
         ];

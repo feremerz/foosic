@@ -23,7 +23,7 @@
         @foreach($artists as $artist)
             <tr class="border border-light">
                 <td><input type="checkbox" class="checkthis"/></td>
-                <td><img width="80" height="80" src="{{ asset($artist->photo->url) }}"></td>
+                <td><img width="80" height="80" src="{{ asset('./images/profiles/'.$artist->photo->url) }}"></td>
                 <td>{{$artist->name}}</td>
                 <td>{{$artist->engName}}</td>
                 <td>

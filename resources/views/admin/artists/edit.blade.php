@@ -2,7 +2,7 @@
 @section('content')
     <div class="row">
         <div class=" col-md-3">
-            <img width="180" height="180" src="{{ asset($artist->photo->url) }}">
+            <img width="180" height="180" src="{{ asset('./images/profiles/'.$artist->photo->url) }}">
         </div>
         <div class="col-md-6">
             <div class="card">

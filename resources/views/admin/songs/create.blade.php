@@ -28,25 +28,25 @@
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user"></i>نام</span>
-                            <input type="text" name="name" class="form-control" placeholder="نام">
+                            <input type="text" name="name" class="form-control" placeholder="نام" value="{{ old('name') }}">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user"></i>نام انگلیسی</span>
-                            <input type="text" name="engName" class="form-control" placeholder="نام انگلیسی">
+                            <input type="text" name="engName" class="form-control" placeholder="نام انگلیسی" value="{{ old('engName') }}">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user"></i>نامک</span>
-                            <input type="text" name="slug" class="form-control" placeholder="نامک">
+                            <input type="text" name="slug" class="form-control" placeholder="نامک" value="{{ old('slug') }}">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user"></i>قیمت</span>
-                            <input type="text" name="price" class="form-control" value="0" placeholder="قیمت">
+                            <input type="text" name="price" class="form-control" value="0" placeholder="قیمت" value="{{ old('price') }}">
                         </div>
                     </div>
                     <div class="form-group">
@@ -58,7 +58,7 @@
                     <div class="form-group">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-envelope"></i>متن آهنگ</span>
-                            <textarea type="text" name="lyrics" class="form-control" placeholder="متن آهنگ"></textarea>
+                            <textarea type="text" name="lyrics" class="form-control" placeholder="متن آهنگ" >{{ old('lyrics') }}</textarea>
                         </div>
                     </div>
                     <div class="form-group">
